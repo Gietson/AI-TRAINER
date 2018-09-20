@@ -1,5 +1,8 @@
 app/ai2/data/bottleneck_data/*
-app/ai2/images/images_to_train/*
-app/ai2/images/images_to_test/*
-app/ai2/images/upload_folder_zip/*
 app/ai2/data/model/*
+/app/ai2/images/images_to_test
+/app/ai2/images/images_to_train
+/app/ai2/images/upload_dataset_folder
+/app/ai2/images/upload_folder
+/app/ai2/images/upload_folder_zip
+/app/ai2/data/model/*
