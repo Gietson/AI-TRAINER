@@ -1,7 +1,10 @@
 function addLabel() {
     var element = $('#label_input')
     var id = generateID(4);
-    $('#label_table tr:last').after('<tr id=' + id + ' ><td><input type="hidden" name="labels[]" value = "' + element.val() + '"/> ' + element.val() + '</td><td><input name = files[] type="file"/></td><td><button onclick=removeRowById(' + id + ')>Remove</button></td></tr>');
+    if (element.val()) {
+        $('#label_table tr:last').after('<tr id=' + id + ' ><td><input type="hidden" name="labels[]" value = "' + element.val() + '"/> ' + element.val() + '</td><td><input name = files[] type="file"/></td><td><button onclick=removeRowById(' + id + ')>Remove</button></td></tr>');
+    }
+    element.val("");
 }
 
 function removeRowById(id) {

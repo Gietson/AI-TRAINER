@@ -152,7 +152,7 @@ def startTraining(image_dir, title, id):
         new_model.status = "Completed"
         db.session.commit()
     except Exception as e:
-        print('[Views] startTraining error: ' + str(e))
+        print('[Views] startTraining error: ', e)
         new_model = Trained_model.query.filter_by(id=id).first()
         new_model.status = "Error"
         db.session.commit()
